@@ -2,178 +2,160 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Отзывы</title>
         <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
-        <style>
-            .all-reviews-wrapper .reviews .review {
-                width: 468px;
-                height: auto;
-                background-color: #f4efed;
-                padding: 40px 60px 40px 40px;
-                margin: 0 15px 30px 15px;
-                float: left;
-                box-sizing: content-box;
-            }
-
-            .all-reviews-wrapper .review:nth-child(2n+1) {
-                margin-left: 0;
-            }
-
-            .all-reviews-wrapper .review:nth-child(2n) {
-                margin-right: 0;
-            }
-
-            .text-menu a[href="/reviews.html"] {
-                text-decoration: underline;
-            }
-
-            .all-reviews-wrapper {
-                padding-top: 38px;
-                padding-bottom: 47px;
-            }
-        </style>
+        <title>Отзывы</title>
     </head>
     <body>
-        <!-- Шапка -->
+        <!-- Header -->
         <header class="header-wrapper">
             <div class="content">
-                <nav>
-                    <ul class="main-menu">
-                        <li><a href="/" class="logo" title="Главная"></a></li>
-                        <div class="text-menu">
-                            <li><a href="/flats.html">Квартиры</a></li>
-                            <li><a href="/reviews.html">Отзывы</a></li>
-                            <li><a href="/about.html">О компании</a></li>
-                        </div>
+                <div class="main-menu">
+                    <nav class="nav">
+                        <a class="header-nav-link logo"  href="/" title="Главная"></a>
+                        <a class="header-nav-link" href="/flats.html">Квартиры</a>
+                        <a class="header-nav-link active" href="/reviews.html">Отзывы</a>
+                        <a class="header-nav-link" href="/about.html">О компании</a>
+                    </nav>
                         
-                        <div class="phone-me">
-                            <li><a href="" class="button-phone">Перезвоните мне</a></li>
-                            <div class="telephone">
-                                <li><a href="tel:89052550010">8 (905) 255-00-10</a></li>
-                                <li class="icon-phone"></li>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </ul>
-                </nav>    
+                    <div class="phone-me">
+                        <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
+                        <a class="button-phone" href="/">Перезвоните мне</a>
+                    </div>
+                </div>   
             </div>
-            <h1>Отзывы</h1>
+            <h1>Посуточная аренда элитных квартир в Санкт-Петербурге</h1>
         </header>
-        <!-- Шапка -->
+        <!-- /Header -->
 
-        <!-- Отзывы -->
+        <!-- Reviews wrapper -->
         <section class="all-reviews-wrapper">
             <div class="content">
                 <h2>Отзывы</h2>
+
                 <ul class="reviews">
                     <li class="review">
-                        <p class="text">Спасибо за домашний уют и тепло! С вами я точно знаю, что лучшего места я не найду за доступные деньги. Идеальный порядок, чистота. Спасибо вам!</p>
+                        <p class="text-review">Спасибо за домашний уют и тепло! С вами я точно знаю, что лучшего места я не найду за доступные деньги. Идеальный порядок, чистота. Спасибо вам!</p>
                         <div class="info">
-                            <img src="/images/review/01.jpg" class="photo">
-                            <p class="author">Татьяна, г. Калининград</p>
-                            <p class="date">22 октября 2018</p>
-                        </div>
-                    </li>
-                    
-                    <li class="review">
-                        <p class="text">Очень чисто и аккуратно. Недавно сделан ремонт. Фотографии соответствуют реальности. На кухне есть все необходимое. Спасибо!</p>
-                        <div class="info">
-                            <img src="/images/review/02.jpg" class="photo">
-                            <p class="author">Николай, г. Новосибирск</p>
-                            <p class="date">14 сентября 2018</p>
-                        </div>
-                    </li>
-                    
-                    <li class="review">
-                        <p class="text">Комфортная квартира, спальные места очень удобные, все новое и чистое. Абсолютно всем знакомым рекомендую ваш сервис!</p>
-                        <div class="info">
-                            <img src="/images/review/03.jpg" class="photo">
-                            <p class="author">Валерий, г. Москва</p>
-                            <p class="date">3 сентября 2018</p>
+                            <img class="photo-review" src="/images/review/01.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Татьяна, г. Калининград</p>
+                                <p class="date">22 октября 2018</p>
+                            </div>
                         </div>
                     </li>
 
                     <li class="review">
-                        <p class="text">Вежливость и внимательность сотрудников, отличные условия проживания, оперативность. Все прекрасно! Спасибо! Снимала квартиру на канале Грибоедова, недалеко от Казанского собора. Квартира просто космическая! Высокие потолки, современный ремонт, красивая мебель в скандинавском стиле, много цветов. И волшебный вид из окна! Буду рекомендовать вас всем знакомым!</p>
+                        <p class="text-review">Комфортная квартира, спальные места очень удобные, все новое и чистое. Абсолютно всем знакомым рекомендую ваш сервис!</p>
                         <div class="info">
-                            <img src="/images/review/05.jpg" class="photo">
-                            <p class="author">Ирина, г. Новокузнецк</p>
-                            <p class="date">11 августа 2018</p>
+                            <img class="photo-review" src="/images/review/03.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Валерий, г. Москва</p>
+                                <p class="date">3 сентября 2018</p>
+                            </div>
                         </div>
                     </li>
-                    
-                    <li class="review">
-                        <p class="text">От всей души рекомендую! Ваш клиент с 2009 года.</p>
-                        <div class="info">
-                            <img src="/images/review/04.jpg" class="photo">
-                            <p class="author">Олег, г. Самара</p>
-                            <p class="date">14 сентября 2018</p>
-                        </div>
-                    </li>
-                    
-                    <li class="review">
-                        <p class="text">Отличные апартаменты. Замечательное обслуживание, вы просто супер! Постоянно останавливаюсь только здесь.</p>
-                        <div class="info">
-                            <img src="/images/review/06.jpg" class="photo">
-                            <p class="author">Ольга, г. Ростов</p>
-                            <p class="date">19 июля 2018</p>
-                        </div>
-                    </li>
-                    
-                    <li class="review">
-                        <p class="text">Большое спасибо за теплый прием и внимание. Апартаменты понравились. Особую благодарность хочу выразить администратору Юлии, вы нас очень выручили!</p>
-                        <div class="info">
-                            <img src="/images/review/07.jpg" class="photo">
-                            <p class="author">Сергей, г. Томск</p>
-                            <p class="date">10 мая 2018</p>
-                        </div>
-                    </li>
-                </ul>
-               <div class="clearfix"></div>
-            </div>
-        </section>
-        <!-- Отзывы -->
 
-        <!-- Подвал -->
+                    <li class="review">
+                        <p class="text-review">Вежливость и внимательность сотрудников, отличные условия проживания, оперативность. Все прекрасно! Спасибо! Снимала квартиру на канале Грибоедова, недалеко от Казанского собора. Квартира просто космическая! Высокие потолки, современный ремонт, красивая мебель в скандинавском стиле, много цветов. И волшебный вид из окна! Буду рекомендовать вас всем знакомым!</p>
+                        <div class="info">
+                            <img class="photo-review" src="/images/review/05.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Ирина, г. Новокузнецк</p>
+                                <p class="date">11 августа 2018</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="review">
+                        <p class="text-review">Очень чисто и аккуратно. Недавно сделан ремонт. Фотографии соответствуют реальности. На кухне есть все необходимое. Спасибо!</p>
+                        <div class="info">
+                            <img class="photo-review" src="/images/review/02.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Николай, г. Новосибирск</p>
+                                <p class="date">14 сентября 2018</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="review">
+                        <p class="text-review">От всей души рекомендую! Ваш клиент с 2009 года.</p>
+                        <div class="info">
+                            <img class="photo-review" src="/images/review/04.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Олег, г. Самара</p>
+                                <p class="date">14 сентября 2018</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="review">
+                        <p class="text-review">Отличные апартаменты. Замечательное обслуживание, вы просто супер! Постоянно останавливаюсь только здесь.</p>
+                        <div class="info">
+                            <img class="photo-review" src="/images/review/06.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Ольга, г. Ростов</p>
+                                <p class="date">19 июля 2018</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="review">
+                        <p class="text-review">Большое спасибо за теплый прием и внимание. Апартаменты понравились. Особую благодарность хочу выразить администратору Юлии, вы нас очень выручили!</p>
+                        <div class="info">
+                            <img class="photo-review" src="/images/review/07.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Сергей, г. Томск</p>
+                                <p class="date">10 мая 2018</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul> <!-- /reviews -->
+
+            </div> <!-- /content -->
+        </section> <!-- /all-reviews-wrapper -->
+        <!-- /Reviews wrapper -->
+
+        <!-- Footer -->
         <footer class="footer-wrapper">
             <div class="footer content">
-                <ul class="main-menu">
-                    <li><a href="/" class="logo" title="Главная"></a></li>
-                    <div class="text-menu">
-                        <li><a href="/flats.html">Квартиры</a></li>
-                        <li><a href="/reviews.html">Отзывы</a></li>
-                        <li><a href="/about.html">О компании</a></li>
+                <div class="footer-menu">
+                    <div class="nav">
+                        <a class="header-nav-link logo"  href="/" title="Главная"></a>
+                        <a class="header-nav-link" href="/flats.html">Квартиры</a>
+                        <a class="header-nav-link" href="/reviews.html">Отзывы</a>
+                        <a class="header-nav-link" href="/about.html">О компании</a>
                     </div>
+
+                    <div class="address">
+                        <img class="icon-mapmarker" src="/images/icons/icon-mapmarker.png" alt="">
+                        <div class="text-address">Санкт-Петербург, набережная реки Мойки, дом&nbsp;40, литер &laquo;А&raquo;, офис 210</div>
+                    </div>
+                    
                     <div class="info-company">
-                        <div class="contacts">
+                        <div class="footer-contacts">
                             <div class="telephone">
-                                <li><a href="tel:89052550010">8 (905) 255-00-10</a></li>
-                                <li class="icon-phone"></li>
+                                <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
                             </div>
                             <div class="social-contacts">
-                                <li><a href="" class="email"></a></li>
-                                <li><a href="" class="vk"></a></li>
-                                <li><a href="" class="fb"></a></li>
-                                <li><a href="" class="insta"></a></li>
+                                <a class="email" href="mailto:office@piter-rent-plus.ru"></a>
+                                <a class="vk" href="https://vk.com/"></a>
+                                <a class="fb" href="https://ru-ru.facebook.com/"></a>
+                                <a class="insta" href="https://www.instagram.com/"></a>
                             </div>
                         </div>
-
-                        <div class="address">
-                            <li class="text-address">Санкт-Петербург, набережная реки Мойки, дом&nbsp;40, литер &laquo;А&raquo;, офис 210</li>
-                            <li class="icon-map"></li>
-                        </div>
                     </div>
-                    <div class="clearfix"></div>
-                </ul>
-                <div class="line"></div>
-                <div class="additional-info">
-                    <a href="" class="license">Лицензионный договор</a>
-                    <a href="/rules.html" class="rules">Правила использования</a>   
                 </div>
-            </div>
-        </footer>
-        <!-- Подвал -->
+
+                <div class="footer-line"></div>
+
+                <div class="additional-info">
+                    <a class="license" href="">Лицензионный договор</a>
+                    <a class="rules" href="/rules.html">Правила использования</a>   
+                </div>
+            </div> <!-- /footer content -->
+        </footer> <!-- /footer-wrapper -->
+        <!-- Footer -->
     </body>
 </html>

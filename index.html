@@ -2,216 +2,244 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Посуточная аренда элитных квартир в Санкт-Петербурге</title>
         <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <title>Посуточная аренда элитных квартир в Санкт-Петербурге</title>
     </head>
+    
     <body>
-        <!-- Шапка -->
+        <!-- Header -->
         <header class="header-wrapper">
             <div class="content">
-                <nav>
-                    <ul class="main-menu">
-                        <li><a href="/" class="logo" title="Главная"></a></li>
-                        <div class="text-menu">
-                            <li><a href="/flats.html">Квартиры</a></li>
-                            <li><a href="/reviews.html">Отзывы</a></li>
-                            <li><a href="/about.html">О компании</a></li>
-                        </div>
+                <div class="main-menu">
+                    <nav class="nav">
+                        <a class="header-nav-link logo"  href="/" title="Главная"></a>
+                        <a class="header-nav-link" href="/flats.html">Квартиры</a>
+                        <a class="header-nav-link" href="/reviews.html">Отзывы</a>
+                        <a class="header-nav-link" href="/about.html">О компании</a>
+                    </nav>
                         
-                        <div class="phone-me">
-                            <li><a href="" class="button-phone">Перезвоните мне</a></li>
-                            <div class="telephone">
-                                <li><a href="tel:89052550010">8 (905) 255-00-10</a></li>
-                                <li class="icon-phone"></li>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </ul>
-                </nav>    
+                    <div class="phone-me">
+                        <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
+                        <a class="button-phone" href="/">Перезвоните мне</a>
+                    </div>
+                </div>   
             </div>
             <h1>Посуточная аренда элитных квартир в Санкт-Петербурге</h1>
         </header>
-        <!-- Шапка -->
+        <!-- /Header -->
 
-        <!-- Квартиры -->
+        <!-- Flats-wrapper -->
         <section class="flats-wrapper">
             <div class="content">
                 <h2>Наши квартиры</h2>
+
                 <ul class="flats">
                     <li class="flat">
                         <div class="price">7000 &#8381;</div>
-                        <img src="/images/rooms/01.jpg">
+                        <img class="img-room" src="/images/rooms/01.jpg" alt="Photo of the apartment">
                         <div class="base-desc">
                             <div class="rooms">1-комнатная</div>
                             <div class="address">Лиговский пр-т, 130</div>
                         </div>
                         <ul class="params">
-                            <li class="icon-guests"></li>
-                            <li class="guests">2 гостя</li>
-                            <li class="icon-beds"></li>
-                            <li class="beds">2 спальных места</li>
+                            <li class="guests">
+                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                2 гостя
+                            </li>
+                            <li class="beds">
+                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                2 спальных места
+                            </li>
                         </ul>
                     </li>
 
                     <li class="flat">
                         <div class="price">6500 &#8381;</div>
-                        <img src="/images/rooms/02.jpg">
+                        <img class="img-room" src="/images/rooms/02.jpg" alt="Photo of the apartment">
                         <div class="base-desc">
                             <div class="rooms">Студия</div>
                             <div class="address">ул. Некрасова, 22</div>
                         </div>
                         <ul class="params">
-                            <li class="icon-guests"></li>
-                            <li class="guests">1 гость</li>
-                            <li class="icon-beds"></li>
-                            <li class="beds">2 спальных места</li>
+                            <li class="guests">
+                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                1 гость
+                            </li>
+                            <li class="beds">
+                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                2 спальных места
+                            </li>
                         </ul>
                     </li>
 
                     <li class="flat">
                         <div class="price">7000 &#8381;</div>
-                        <img src="/images/rooms/03.jpg">
+                        <img class="img-room" src="/images/rooms/03.jpg" alt="Photo of the apartment">
                         <div class="base-desc">
                             <div class="rooms">Студия</div>
                             <div class="address">ул. 4-я Красноармейская, 2</div>
                         </div>
                         <ul class="params">
-                            <li class="icon-guests"></li>
-                            <li class="guests">3 гостя</li>
-                            <li class="icon-beds"></li>
-                            <li class="beds">4 спальных места</li>
+                            <li class="guests">
+                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                3 гостя
+                            </li>
+                            <li class="beds">
+                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                4 спальных места
+                            </li>
                         </ul>
                     </li>
 
                     <li class="flat">
                         <div class="price">9500 &#8381;</div>
-                        <img src="/images/rooms/04.jpg">
+                        <img class="img-room" src="/images/rooms/04.jpg" alt="Photo of the apartment">
                         <div class="base-desc">
                             <div class="rooms">1-комнатная</div>
                             <div class="address">ул. Ораниенбаумская, 24</div>
                         </div>
                         <ul class="params">
-                            <li class="icon-guests"></li>
-                            <li class="guests">2 гостя</li>
-                            <li class="icon-beds"></li>
-                            <li class="beds">2 спальных места</li>
+                            <li class="guests">
+                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                2 гостя
+                            </li>
+                            <li class="beds">
+                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                2 спальных места
+                            </li>
                         </ul>
                     </li>
 
                     <li class="flat">
                         <div class="price">8000 &#8381;</div>
-                        <img src="/images/rooms/05.jpg">
+                        <img class="img-room" src="/images/rooms/05.jpg" alt="Photo of the apartment">
                         <div class="base-desc">
                             <div class="rooms">1-комнатная</div>
                             <div class="address">Невский пр-т, 113</div>
                         </div>
                         <ul class="params">
-                            <li class="icon-guests"></li>
-                            <li class="guests">3 гостя</li>
-                            <li class="icon-beds"></li>
-                            <li class="beds">3 спальных места</li>
+                            <li class="guests">
+                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                3 гостя
+                            </li>
+                            <li class="beds">
+                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                3 спальных места
+                            </li>
                         </ul>
                     </li>
 
                     <li class="flat">
                         <div class="price">12000 &#8381;</div>
-                        <img src="/images/rooms/06.jpg">
+                        <img class="img-room" src="/images/rooms/06.jpg" alt="Photo of the apartment">
                         <div class="base-desc">
                             <div class="rooms">2-комнатная</div>
                             <div class="address">10-я линия В.О., 57</div>
                         </div>
                         <ul class="params">
-                            <li class="icon-guests"></li>
-                            <li class="guests">5 гостей</li>
-                            <li class="icon-beds"></li>
-                            <li class="beds">6 спальных мест</li>
+                            <li class="guests">
+                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                5 гостей
+                            </li>
+                            <li class="beds">
+                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                6 спальных мест
+                            </li>
                         </ul>
                     </li>
-                    <div class="clearfix"></div>
-                </ul>
-                <div class="button">
-                    <a href="/flats.html">Все квартиры</a>
-                </div>
-            </div>
-        </section>
-        <!-- Квартиры -->
+                </ul> <!-- /Flats -->
 
-        <!-- Отзывы -->
+                <div class="button-center">
+                    <a class="button" href="/flats.html">Все квартиры</a>
+                </div>
+
+            </div> <!-- /Content -->
+        </section> <!-- /flats-wrapper -->
+        <!-- /Flats-wrapper -->
+
+        <!-- Reviews-wrapper -->
         <section class="reviews-wrapper">
             <div class="content">
                 <h2>Отзывы</h2>
-                <div class="reviews">
-                    <div class="review">
-                        <p class="text">Спасибо за домашний уют и тепло! С вами я точно знаю, что лучшего места я не найду за доступные деньги. Идеальный порядок, чистота. Спасибо вам!</p>
-                        <div class="info">
-                            <img src="/images/review/01.jpg" class="photo">
-                            <p class="author">Татьяна, г. Калининград</p>
-                            <p class="date">22 октября 2018</p>
-                        </div>
-                    </div>
 
-                    <div class="review">
-                        <p class="text">Очень чисто и аккуратно. Недавно сделан ремонт. Фотографии соответствуют реальности. На кухне есть все необходимое. Спасибо!</p>
+                <ul class="reviews">
+                    <li class="review">
+                        <p class="text-review">Спасибо за домашний уют и тепло! С вами я точно знаю, что лучшего места я не найду за доступные деньги. Идеальный порядок, чистота. Спасибо вам!</p>
                         <div class="info">
-                            <img src="/images/review/02.jpg" class="photo">
-                            <p class="author">Николай, г. Новосибирск</p>
-                            <p class="date">14 сентября 2018</p>
+                            <img class="photo-review" src="/images/review/01.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Татьяна, г. Калининград</p>
+                                <p class="date">22 октября 2018</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <ul class="currents">
-                    <li class="current"></li>
-                    <li class="current"></li>
-                    <li class="current"></li>
+                    </li>
+
+                    <li class="review">
+                        <p class="text-review">Очень чисто и аккуратно. Недавно сделан ремонт. Фотографии соответствуют реальности. На кухне есть все необходимое. Спасибо!</p>
+                        <div class="info">
+                            <img class="photo-review" src="/images/review/02.jpg" alt="photo review">
+                            <div class="info-review">
+                                <p class="author">Николай, г. Новосибирск</p>
+                                <p class="date">14 сентября 2018</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-                <div class="button">
-                    <a href="/reviews.html">Все отзывы</a>
-                </div>
-            </div>
-        </section>
-        <!-- Отзывы -->
 
-        <!-- Подвал -->
+                <div class="currents">
+                    <div class="current"></div>
+                    <div class="current"></div>
+                    <div class="current"></div>
+                </div>
+
+                <div class="button-center">
+                    <a class="button" href="/reviews.html">Все отзывы</a>
+                </div>
+            </div> <!-- content -->
+        </section> <!-- /reviews-wrapper -->
+        <!-- /Reviews-wrapper -->
+
+        <!-- Footer -->
         <footer class="footer-wrapper">
             <div class="footer content">
-                <ul class="main-menu">
-                    <li><a href="/" class="logo" title="Главная"></a></li>
-                    <div class="text-menu">
-                        <li><a href="/flats.html">Квартиры</a></li>
-                        <li><a href="/reviews.html">Отзывы</a></li>
-                        <li><a href="/about.html">О компании</a></li>
+                <div class="footer-menu">
+                    <div class="nav">
+                        <a class="header-nav-link logo"  href="/" title="Главная"></a>
+                        <a class="header-nav-link" href="/flats.html">Квартиры</a>
+                        <a class="header-nav-link" href="/reviews.html">Отзывы</a>
+                        <a class="header-nav-link" href="/about.html">О компании</a>
                     </div>
+
+                    <div class="address">
+                        <img class="icon-mapmarker" src="/images/icons/icon-mapmarker.png" alt="">
+                        <div class="text-address">Санкт-Петербург, набережная реки Мойки, дом&nbsp;40, литер &laquo;А&raquo;, офис 210</div>
+                    </div>
+                    
                     <div class="info-company">
-                        <div class="contacts">
+                        <div class="footer-contacts">
                             <div class="telephone">
-                                <li><a href="tel:89052550010">8 (905) 255-00-10</a></li>
-                                <li class="icon-phone"></li>
+                                <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
                             </div>
                             <div class="social-contacts">
-                                <li><a href="" class="email"></a></li>
-                                <li><a href="" class="vk"></a></li>
-                                <li><a href="" class="fb"></a></li>
-                                <li><a href="" class="insta"></a></li>
+                                <a class="email" href="mailto:office@piter-rent-plus.ru"></a>
+                                <a class="vk" href="https://vk.com/"></a>
+                                <a class="fb" href="https://ru-ru.facebook.com/"></a>
+                                <a class="insta" href="https://www.instagram.com/"></a>
                             </div>
                         </div>
-
-                        <div class="address">
-                            <li class="text-address">Санкт-Петербург, набережная реки Мойки, дом&nbsp;40, литер &laquo;А&raquo;, офис 210</li>
-                            <li class="icon-map"></li>
-                        </div>
                     </div>
-                    <div class="clearfix"></div>
-                </ul>
-                <div class="line"></div>
-                <div class="additional-info">
-                    <a href="" class="license">Лицензионный договор</a>
-                    <a href="/rules.html" class="rules">Правила использования</a>   
                 </div>
-            </div>
-        </footer>
-        <!-- Подвал -->
+
+                <div class="footer-line"></div>
+
+                <div class="additional-info">
+                    <a class="license" href="">Лицензионный договор</a>
+                    <a class="rules" href="/rules.html">Правила использования</a>   
+                </div>
+            </div> <!-- /footer content -->
+        </footer> <!-- /footer-wrapper -->
+        <!-- Footer -->
     </body>
 </html>

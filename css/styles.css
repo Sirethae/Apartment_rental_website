@@ -1,12 +1,21 @@
 html {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;  
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 .content {
-    width: 1167px;
-    margin: 0 auto 24px auto;
-    text-align: center;
+    width: 100%;
+    max-width: 1166px;
+    
+    margin: 0 auto;
+
+    color: rgb(42, 42, 42);
 }
 
 h1 {
@@ -14,303 +23,377 @@ h1 {
 }
 
 h1, h2, h3 {
-    font-weight: bold;
-    text-align: center;
-}
-
-h2 {
+    font-family: 'Roboto';
     font-size: 2rem;
     line-height: 1.5;
-    margin-bottom: 43px;
-}
-
-p {
-    font-size: 1rem;
-    font-family: 'Roboto';
-    color: rgb(42, 42, 42);
-    line-height: 1.375;
-    text-align: left;
-    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+    margin: 0; 
 }
 
 
-.clearfix {
-    clear: both;
-}
-
-.button a {
-    font-size: 15px;
-    color: rgb(42, 42, 42);
-    line-height: 1.467;
-    text-decoration: none;
-    border: rgb(42, 42, 42) 1px solid;
-    border-radius: 20px;
-    padding: 9px 20px 0 19px;
-    display: inline-block;
-    margin: 16px auto;
-    height: 31px;    
-}
-
-.button a:hover {
-    background-color: rgb(42, 42, 42);
-    color: rgb(255, 255, 255);        
-}
-
-/* Шапка */
+/* Header */
 .header-wrapper {
     background-color: rgb(42, 42, 42);
-    width: auto;
-    height: 40px;
-    padding: 20px 0;     
+
+    padding: 1.4rem 0;   
 }
 
-.header-wrapper .content {
-    height: 38px;
-}
-
-.text-menu a {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    float: left;
-    margin-right: 51px;
-    padding: 10px 0 30px 0;
-    text-decoration: none;    
-}
-
-.text-menu:last-child {
-    margin-right: 0;
-}
-
-.text-menu a:hover {
-    opacity: 0.4;
-    text-decoration: underline;
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
+    display: block;
+    background-image: url(/images/logo.svg);
+
     width: 35px;
     height: 38px;
-    display: block;
-    background-image: url(/images/icons/logo.svg);
-    float: left;
-    margin-right: 51px;
 }
 
 .logo:hover {
     opacity: 0.4;
 }
 
-.phone-me .telephone a {
-    font-size: 18px;
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-link {
+    margin-right: 3.3rem;
+
     color: rgb(255, 255, 255);
-    line-height: 1.333;
+    font-size: 1.2rem;
+    line-height: 1.3;
     text-decoration: none;
-    float: right;
-    margin: 9px 50px 0 0;     
+
+    transition: opacity 0.2s linear;
 }
 
-.phone-me .button-phone {
-    float: right;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    line-height: 1.467;
-    border: rgb(255, 255, 255) 1px solid;
-    border-radius: 20px;
-    padding: 9px 20px 0 19px;
-    display: block;
-    height: 30px;
-    text-decoration: none;     
-}
-
-.phone-me .telephone .icon-phone {
-    background-image: url(/images/icons/icon-phone.png);
-    width: 14px;
-    height: 14px;
-    float: right;
-    margin: 13px 11px 0 0;
-}
-
-.telephone:hover {
+.header-nav-link:hover {
     opacity: 0.4;
+    position: relative;
+}
+
+.header-nav-link:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+
+    background-color: rgb(255, 255, 255, 0.4);
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+.phone-me a {
+    margin-left: 3rem;
+}
+
+.tel {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-decoration: none;
+
+    transition: opacity 0.2s linear;
+}
+
+.icon-phone {
+    margin-right: 11px;
+}
+
+.tel:hover, .icon-phone:hover {
+    opacity: 0.4;
+}
+
+.button-phone {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.467;
+    text-decoration: none;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1.3em;
+
+    padding: 0.7em 1.4em;
+
+    transition: color 0.2s linear, background-color 0.2s linear;
 }
 
 .button-phone:hover {
     color: rgb(42, 42, 42);
-    background-color: rgb(255, 255, 255);         
-}
-/* Шапка */
 
-/* Главная страница */
-    /* Квартиры */
-.flats-wrapper {
-    background-color: #f5f5f5;
-    height: 979px;
-    padding-top: 38px;
-    margin-bottom: 38px;
-    text-align: center;
+    background-color: rgb(255, 255, 255);
 }
 
-.flats .flat {
-    background-color: white;
-    margin: 0 15px 30px 15px;
-    float: left;
-    width: 369px;
-    height: 365px;
+.header-nav-link.active {
     position: relative;
 }
 
-.flat img {
-    background-color: olive;
+.header-nav-link.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+/* /Header 
+======================*/
+
+
+    /* index.html main content */
+
+/* Flats-wrapper */
+.flats-wrapper {
+    background-color: #f5f5f5;
+    
+    padding-top: 39px;
+}
+
+.flats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 44px;
+}
+
+.flat {
+    margin-bottom: 30px;
+
+    background-color: white;
+    max-width: 369px;
+    height: 365px;
+
+    position: relative;
+}
+
+.flat .img-room {
     display: block;
     height: 220px;
 }
 
 .flat .price {
-    position: absolute;
-    background-color: white;
-    right: 15px;
-    top: 15px;
-    border-radius: 5px;
-    background-color: rgb(42, 42, 42);
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    line-height: 1.333;
-    padding: 14.6px 15px 11.6px 16px;
     display: block;
-    height: 24px;
-    width: auto;     
+    padding: 0.7em 0.7em 0.8em 0.8em;
+
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+
+    background-color: rgb(42, 42, 42);
+    border-radius: 0.3em;     
 }
 
 .flat .base-desc {
-    font-size: 18px;
-    color: rgb(42, 42, 42);
-    line-height: 1.333;
+    font-size: 1.2rem;
+    line-height: 1.3;
+
     padding: 25px 0 0 40px;
-    text-align: left;
-}
-
-.flat .params {
-    font-size: 14px;
-    color: rgb(42, 42, 42);
-    line-height: 1.429;
-    margin: 12px 0 40px 40px;
-}
-
-.params .guests {
-    float: left;
-    margin-right: 10px;
-}
-
-.params .icon-guests {
-    background-image: url(/images/icons/icon-guests.png);
-    width: 12px;
-    height: 16px;
-    float: left;
-    margin: 2px 10px 0 0;   
-}
-
-.params .icon-beds {
-    background-image: url(/images/icons/icon-beds.png);
-    width: 14px;
-    height: 16px;
-    float: left;
-    margin: 2px 10px 0 0;   
-}
-
-.params .beds {
-    float: left;
 }
 
 .flat .rooms {
     font-weight: bold;
 }
 
-.flat:nth-child(3n+1) {
-    margin-left: 0;
+.flat .params {
+    display: flex;
+
+    font-size: 0.9rem;
+    line-height: 1.4;
+    
+    margin: 12px 40px;
 }
 
-.flat:nth-child(3n) {
-    margin-right: 0;
+.flat .guests {
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px;
 }
-    /* Квартиры */
+
+.flat .beds {
+    display: flex;
+    align-items: center;
+}
+
+.icon-guests, .icon-beds {
+    margin-right: 10px;
+}
+/* /Flats-wrapper 
+==========================*/
 
 
-    /* Отзывы */
+/* Button */
+    .button-center {
+        text-align: center;
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 8px 20px 8px 20px;
+        margin: 16px auto 40px auto; 
+    
+        font-size: 1rem;
+        line-height: 1.4;
+        color: rgb(42, 42, 42);
+        text-decoration: none;
+    
+        border: rgb(42, 42, 42) 1px solid;
+        border-radius: 20px;
+        
+        transition: background-color 0.2s linear, color 0.2s linear;
+    }
+    
+    .button:hover {
+        background-color: rgb(42, 42, 42);
+        color: rgb(255, 255, 255);        
+    }
+/* /Button 
+=========================*/
+
+
+/* Reviews-wrapper */
+.reviews-wrapper h2 {
+    padding: 39px 0 28px 0;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between; 
+}
+
 .reviews .review {
-    width: 468px;
-    height: 131px;
-    background-color: #f4efed;
-    padding: 40px 60px 40px 40px;
-    margin: 0 15px 30px 15px;
-    float: left;
-}
+    padding: 37px 60px 40px 40px;
+    margin: 0 30px 30px 0;
 
-.review:first-child {
-    margin-left: 0;
+    max-width: 568px;
+    
+    background-color: #f4efed;    
 }
 
 .review:last-child {
     margin-right: 0;
 }
 
-.info img {
+.review:nth-child(2n) {
+    margin-right: 0;
+}
+
+.text-review {
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    line-height: 1.3;
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.photo-review {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    float: left;
+
     margin-right: 13px;      
 }
 
-.info p.author {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22px;
-    margin: 0 0 0 0;
-    padding-top: 4px;
+.info-review {
+    display: flex;
+    flex-direction: column;
 }
 
-.info p.date {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0 0 4px 0;
+.author {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.currents {
+    text-align: center;
 }
 
 .currents .current {
     display: inline-block;
+    margin: 0 8px 21px 8px;
+
     width: 10px;
     height: 10px;
+
     background-color: #1b1b1c;
-    border-radius: 50%;
-    margin: 0 8px 22px 8px;
     opacity: 0.25;
+
+    border-radius: 50%;
 }
 
-.currents li:first-child {
+.current:first-child {
     opacity: 1;
 }
 
-.currents li:nth-child(2):hover {
+.current:nth-child(2):hover {
     opacity: 0.4;
 }
-    /* Отзывы */
-/* Главная страница */
+/* /Reviews-wrapper 
+==================================*/
 
-/* Подвал */
+    /* index.html main content 
+    ==================================*/
+
+/* Footer */
 .footer-wrapper {
     background-color: rgb(42, 42, 42);
-    width: auto;
-    height: 265px;      
+    width: auto;     
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 71px 0 50px 0;
+}
+
+.footer-menu .nav {
+    flex-basis: 47%;
+}
+
+.address {
+    flex-basis: 30%;
+}
+
+.footer .social-contacts {
+    display: flex;
 }
 
 .footer .social-contacts a {
     display: block;
     background-image: url(/images/icons/contacts.png);
-    float: left;
-    margin-right: 30px;
-    margin-top: 20px;
-}
 
-.footer .social-contacts a:hover {
-    opacity: 0.4;
+    margin: 20px 30px 0 0;
+
+    transition: opacity 0.2s linear;
 }
 
 .footer .social-contacts a.email {
@@ -336,95 +419,107 @@ p {
     background-position: 0 -14px;
 }
 
-.social-contacts a.insta {
-    margin-right: 0;
-}
-
-.footer .telephone a {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    line-height: 1.333;
-    text-decoration: none;
-    float: right;
-    margin-left: 25px;     
-}
-
-.footer .telephone .icon-phone {
-    background-image: url(/images/icons/icon-phone.png);
-    width: 14px;
-    height: 14px;
-    float: left;
-    margin-top: -20px;
-}
-
-.address .icon-map {
-    background-image: url(/images/icons/icon-mapmarker.png);
-    width: 14px;
-    height: 19px;
-    float: right;
-    margin-right: 11px;
+.footer .social-contacts a:hover {
+    opacity: 0.4;
 }
 
 .address .text-address {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    line-height: 1.333;
-    width: 300px;
-    height: 45px;
-    float: right;
-    margin-right: 73px;
+    line-height: 1.3;
 }
 
-.footer .contacts {
-    float: right;
+.address {
+    display: flex;
 }
 
-.footer .main-menu {
-    padding-top: 73px;
+.icon-mapmarker {
+    margin-right: 11px;
+
+    width: 14px;
+    height: 19px;
 }
 
-.footer .line {
-    border-bottom: 1px solid white;
-    opacity: 0.1;
-    margin-top: 50px;
-    margin-bottom: 34px;
+.footer-line {
+    display: block;
+
+    width: 100%;
+    max-width: 1166px;
+    height: 1px;
+
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.additional-info {
+    text-align: center;
+    padding: 34px 0;
 }
 
 .additional-info a {
+    display: inline-block;
     font-size: 12px;
-    color: white;
-    line-height: 1.333;
-    text-decoration: underline;
+    line-height: 1.3;
+    color: rgb(255, 255, 255);
     opacity: 0.4;
+    text-decoration: none;
+    
     margin: 0 9px 0 9px;
-}
 
-.additional-info:first-child {
-    margin-left: 0;
+    transition: opacity 0.2s linear;
 }
 
 .additional-info a:hover {
     opacity: 1;
 }
-/* Подвал */
 
-/* Страница о компании */
-    /* О компании */
+.license::after {
+    content: " ";
+    display: block;
+
+    width: 135px;
+    height: 1px;
+
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.rules::after {
+    content: " ";
+    display: block;
+
+    width: 135px;
+    height: 1px;
+
+    background-color: rgb(255, 255, 255, 0.4);
+}
+/* /Footer 
+================================*/
+
+
+    /* About.html */
+/* About company text */
 .about-company {
-    height: 340px;
-    padding-top: 38px;
+    padding-bottom: 40px;
+}
+
+.about-company h2 {
+    padding: 39px 0 28px 0;
 }
 
 .text-about-company {
-    border-left: 2px solid #2a2a2a;
-    width: 965px;
-    margin: -15px auto 0 auto;
+    margin: 0 auto;
+    max-width: 965px;
+    
+    border-left: 2px solid #2a2a2a; 
 }
 
 .text-about-company p {
-    font-size: 18px;
-    line-height: 1.333;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-family: "Roboto";
+    color: rgb(42, 42, 42);
+
     padding-left: 29px;
+    margin-bottom: 20px;
 }
 
 .text-about-company p strong {
@@ -434,204 +529,309 @@ p {
 .text-about-company p i {
     font-style: italic;
 }
-    /* О компании */
+/* /About company text 
+==============================*/
 
-    /* Контакты */
+/* Company contacts */
 .company-contacts {
     background-color: #f5f5f5;
-    height: 542px;
-    padding-top: 38px;
+
+    padding-bottom: 60px;
 }
 
-.company-contacts .contact-info {
-    margin-top: -2px;
+.company-contacts h2 {
+    padding: 39px 0 43px 0;
 }
 
-.contact-info .contacts {
-    float: left;
+.contact-info {
+    display: flex;
+
+    width: 100%;
+    max-width: 1166px;
     height: 392px;
-    width: 598px;
+}
+
+.contacts {
+    flex-basis: 55%;
+
     background-color: white;
 }
 
-.contact-info .contacts li.time {
-    font-size: 24px;
-    line-height: 0.917;
-    text-align: left;
-    margin: 40px 0 40px 40px;
+.contact-info .contacts li {
+    margin: 0 0 40px 40px;
+
+    font-size: 1.2rem;
+    line-height: 1.3;
+    
+    position: relative;
 }
 
-.contact-info .contacts li {
-    font-size: 18px;
-    line-height: 1.333;
-    text-align: left;
-    margin: 20px 0 20px 40px;
+.contacts li.contacts-time {
+    font-size: 1.6rem;
+    line-height: 0.9;
+    margin: 40px 0 40px 40px;
 }
 
 .contact-info .contacts li b {
     font-weight: bold;
 }
 
-.contact-info .social-contacts a {
+.contacts-address::after, 
+.contacts-tel::after, 
+.contacts-e-mail::after {
+    content: "";
     display: block;
-    height: 20px;
-    float: left;
-    margin: 0 65px 0 -40px;
-}
 
-.contact-info .contacts .line {
-    background-color: rgb(27, 27, 28);
-    opacity: 0.102;
     width: 479px;
     height: 1px;
+
+    background-color: rgb(27, 27, 28, 0.1);
+
+    position: absolute;
+    bottom: -18px;
+}
+
+.company-social-contacts {
+    display: flex;
+}
+ 
+.company-social-contacts li a {
+    display: block;
+    margin-left: -40px;
+    padding-right: 25px;
+
+    height: 20px;
+
+    transition: opacity 0.2s linear;
+}
+
+.company-social-contacts a:hover {
+    opacity: 0.7;
 }
 
 .contact-info .map-info {
     position: relative;
-    width: 568px;
-    height: 392px;
-    float: right;
+    
+    max-width: 568px;
 }
 
 .contact-info .map-info .map-icon {
     height: 50px;
     width: 37px;
+    
     position: absolute;
     top: 171px;
     right: 266px;
 }
 
 .contact-info .map-info .map {
-width: 568px;
-height: 392px;
+    width: 568px;
+    height: 392px;
 }
-    /* Контакты */
+/* /Company contacts 
+=====================================*/
 
-    /* Наша команда */
-.our-team {
-    padding-top: 38px;
+/* Our team */
+.our-team h2 {
+    padding: 39px 0 40px 0;
 }
 
 .employees {
-    margin-top: -10px;
-    margin-bottom: 70px;
-}
-
-.employees .colleague-photo {
-    border-radius: 50%;
-    float: left;
-    height: 100px;
-    width: 100px;
-    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 69px;
 }
 
 .colleague {
-    float: left;
-    width: 360px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+
+    margin: 0 30px 31px 0;
+}
+
+.colleague-photo {
+    margin-right: 20px;
+
     height: 100px;
-    margin: 0 15px 31px 15px;
+    width: 100px;
+
+    border-radius: 50%;
 }
 
-.colleague:nth-child(3n+1) {
-    margin-left: 0;
-}
-
-.colleague:nth-child(3n) {
-    margin-right: 0;
-}
-
-.colleague .FIO {
-    font-size: 18px;
-    line-height: 1.333;
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-.colleague .FIO b {
+.FIO {
+    font-size: 1.2rem;
+    line-height: 1.3;
     font-weight: bold;
 }
 
-.colleague-contacts .telephone-icon {
-    background-image: url(/images/icons/phone.png);
-    height: 14px;
-    width: 14px;
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
+.colleague-post {
+    font-size: 1.2rem;
+    line-height: 1.3;
 }
 
-.colleague-contacts .mail-icon {
-    background-image: url(/images/icons/mail.png);
+.telephone-icon {
+    height: 14px;
+    width: 14px;
+    
+    margin-right: 10px;
+}
+
+.mail-icon {
     height: 11px;
     width: 14px;
-    float: left;
+    
     margin-right: 10px;
-    margin-top: 6px;
 }
 
 .colleague-contacts li a{
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 0.9rem;
+    line-height: 1.7;
     color: rgb(42, 42, 42);
     text-decoration: none;
-    text-align: left;
-    display: block;
-}
-    /* Наша команда */
-/* Страница о компании */
 
-/* Страница наши квартиры */
+    transition: opacity 0.2s linear, text-decoration 0.2s linear;
+}
+
+.colleague-contacts li a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+/* /Our team 
+==========================================*/
+
+/* /About.html 
+====================================*/ 
+
+
+/* Flats.html */
+.all-flats-wrapper h2 {
+    padding: 39px 0 40px 0;
+}
+
 .all-flats-wrapper {
     background-color: #f5f5f5;
-    padding-top: 38px;
-    padding-bottom: 47px;
+    padding-bottom: 70px;
 }
 
-form label, form p {
-    font-size: 14px;
+/* Form */
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.rental-dates {
+    margin-right: 30px;
+}
+
+.label {
+    margin-bottom: 8px;
+
+    font-size: 0.9rem;
+    font-family: "Roboto";
+    line-height: 1.4;
     color: rgb(27, 27, 28);
-    line-height: 1.429;
-    display: inline-block;
-    text-align: left;
+
+    display: block;
 }
 
-input {
-    margin-top: 8px;
-    margin-bottom: 40px;
-}
+.input-date {
+    margin-right: 10px;
 
-input[type="submit"] {
-    font-size: 14px;
+    width: 147px;
+    height: 35px;
+
+    font-size: 0.9rem;
+    font-family: "Roboto";
     color: rgb(27, 27, 28);
-    line-height: 1.429;
-    padding: 7px 9px 5px 10px;
-    border-radius: 5px;
-    opacity: 0.2;
-}
+    line-height: 1.4;
+    text-align: center;
 
-input[checked] {
-    opacity: 1;
-    color: white;
-    background-color: rgb(27, 27, 28);
-}
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 0.3em;
 
-input[type="submit"]:hover {
-    opacity: 1;
     background-color: #f5f5f5;
-    color: rgb(27, 27, 28);
 }
 
-input[type="date"] {
-    font-size: 14px;
-    color: rgb(27, 27, 28);
-    line-height: 1.429;
-    padding: 4px 9px 4px 11px;
-    border-radius: 5px;
+.input-date:last-child {
+    margin-right: 0;
+
+    opacity: 0.4;
+
+    transition: opasity 0.2s linear;
 }
 
-label {
-    margin-right: 27px;
+.input-date:last-child:hover {
+    opacity: 1;
 }
-/* Страница наши квартиры */
+
+.input-date:hover, .input-apartment:hover {
+    cursor: pointer;
+}
+
+.rental-dates:first-child {
+    position: relative;
+}
+
+.rental-dates:first-child::after {
+    content: "";
+    display: block;
+
+    width: 6px;
+    height: 1px;
+
+    background-color: rgb(42, 42, 42, 0.2);
+
+    position: absolute;
+    left: 49%;
+    top: 45px;
+}
+
+.input-apartment {
+    padding: 8px 10px 7px 11px;
+
+    font-size: 0.9rem;
+    font-family: "Roboto";
+    color: rgba(27, 27, 28);
+    line-height: 1.4;
+
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 0.3em;
+
+    opacity: 0.4;
+
+    transition: opacity 0.2s linear;
+}
+
+.input-apartment:hover {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.input-apartment:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(42, 42, 42);
+    opacity: 1;
+}
+/* /Flats.html 
+======================================*/ 
   
-  
+
+    /* Reviews.html */
+/* All reviews wrapper */
+.all-reviews-wrapper h2 {
+    padding: 39px 0 28px 0;
+}
+
+.all-reviews-wrapper .reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+
+    max-height: 1000px; 
+}
+
+.all-reviews-wrapper .review {
+    width: 568px;
+}
