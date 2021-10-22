@@ -2,87 +2,209 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Квартира на Невского</title>
+        <link rel="icon" type="image/png" href="/images/logo-favicon.png">
         <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
-        <style>
-            input, textarea {
-                display: block;
-                margin: 0 0 10px 10px;
-                border: 1px solid gray;
-            }
-
-            input[type="text"] {
-                padding: 5px;
-                font-size: 1.5rem;
-                width: 250px;
-            }
-
-            textarea {
-                font-size: 1.5rem;
-                width: 400px;
-                height: 80px;
-                padding: 5px;
-            }
-
-            label {
-                font-size: 1.5rem;
-                display: block;
-            }
-
-            input[type="checkbox"], input[type="radio"] {
-                float: left;
-                width: 30px;
-                margin-bottom: 5px;
-            }
-
-            select {
-                width: 200px;
-                font-size: 1rem;
-                margin: 0 0 10px 5px;
-            }
-        </style>
+        <title>2-комнатная квартира, 10-я линия В.О., 57</title>
     </head>
-    <body>
-        <h1>1-к квартира на Невского</h1>
-        <form action="https://shultais.education/form" method="POST" target="_blank" enctype="multipart/form-data">
-            <label>Имя:
-                <input type="text" name="first_name" placeholder="Введите ваше имя"></label>
-            <label for="post-comment">Текст комментария:</label>
-                <textarea id="post-comment" name="comment"></textarea>
-            <label>
-                <input type="checkbox" name="rules">
-                принять правила проекта
-            </label>
-            <label>
-                <input type="checkbox" name="subs" checked>
-                подписаться на рассылку
-            </label>
-            <label>
-                <input type="radio" name="sex" value="m" checked>Мужской
-            </label>
-            <label>
-                <input type="radio" name="sex" value="w">Женский
-            </label>
-            <select name="countries" size="5">
-                <optgroup label="СНГ">
-                    <option value="ru">Россия</option>
-                    <option value="kz">Казахстан</option>
-                    <option value="by">Белоруссия</option>
-                </optgroup>
 
-                <optgroup label="Европа">
-                    <option value="en">Англия</option>
-                    <option value="be">Бельгия</option>
-                    <option value="de">Германия</option>
-                    <option value="pl">Польша</option>
-                    <option value="fr">Франция</option>
-                    <option value="cz">Чехия</option>
-                </optgroup>
-            </select>
-            <input type="file" name="photo">
-            <input type="submit" value="Отправить">
-        </form>
+    <body>
+        <!-- Header -->
+        <header class="header-wrapper">
+            <div class="content">
+                <div class="main-menu">
+                    <nav class="nav">
+                        <a class="header-nav-link logo"  href="/" title="Главная"></a>
+                        <a class="header-nav-link" href="/flats.html">Квартиры</a>
+                        <a class="header-nav-link" href="/reviews.html">Отзывы</a>
+                        <a class="header-nav-link" href="/about.html">О компании</a>
+                    </nav>
+                        
+                    <div class="phone-me">
+                        <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
+                        <a class="button-phone" href="/">Перезвоните мне</a>
+                    </div>
+                </div>   
+            </div>
+            <h1>2-комнатная квартира, 10-я линия В.О., 57</h1>
+        </header>
+        <!-- /Header -->
+
+        <!-- Apartment -->
+        <section class="apartment">
+            <div class="content">
+                <h2>2-комнатная квартира, 10-я линия В.О., 57</h2>
+
+                <div class="apartment-info">
+                    <div class="apartment-gallery">
+                        <img class="apartment-photo" src="/images/rooms/2-ком 10-я линия В.О/01.jpg" alt="apartment-photo">
+                        <img class="apartment-photo" src="/images/rooms/2-ком 10-я линия В.О/02.jpg" alt="apartment-photo">
+                        <img class="apartment-photo" src="/images/rooms/2-ком 10-я линия В.О/03.jpg" alt="apartment-photo">
+                        <img class="apartment-photo" src="/images/rooms/2-ком 10-я линия В.О/04.jpg" alt="apartment-photo">
+                        <img class="apartment-photo" src="/images/rooms/2-ком 10-я линия В.О/05.jpg" alt="apartment-photo">
+                    </div>
+
+                    <div class="apartment-parameters">
+                        <div class="apartment-price">
+                            <p>Цена / сутки:</p>
+                            12 000&#8381;
+                        </div>
+
+                        <button class="btn-booking" type="submit" name="action-booking" value="booking">Забронировать</button>
+
+                        <div class="apartment-text">
+                            <p>Двухкомнатная квартира-студия класса люкс расположена на&nbsp;четвертом этаже шестиэтажного дома. Во&nbsp;дворе охраняемая парковка. Ресторан и&nbsp;кафе на&nbsp;первом этаже дома.</p>
+                        </div>
+
+                        <ul class="apartment-params">
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                            <li class="amenities">
+                                Кабельное ТВ, игровая консоль, WiFi
+                            </li>
+                            <li class="additional-amenities">
+                                фен, утюг, гладильная доска, предметы гигиены, фильтр для воды, кофемашина, чай, печенье
+                            </li>
+                        </ul>
+                    </div> <!-- /apartment-parameters -->
+
+                    <div class="apartment-map">
+                        <img class="apartment-address-map" src="/images/rooms/2-ком 10-я линия В.О/map.jpg" alt="map">
+                    </div>
+                </div> <!-- /apartment-info -->
+
+            </div> <!-- /content -->
+        </section> <!-- /Apartment -->
+        <!-- /Apartment -->
+
+        <section class="apartment-forms">
+            <div class="content">
+                <h2>Забронировать квартиру</h2>
+
+                <div class="booking-forms">
+                    <form class="calendar" action="" method="post">
+                        <table id="calendar2">
+                            <thead>
+                            <tr><td>‹<td colspan="5"><td>›
+                            <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                            <tbody>
+                        </table>
+                        
+                        <script>
+                        function Calendar2(id, year, month) {
+                        var Dlast = new Date(year,month+1,0).getDate(),
+                            D = new Date(year,month,Dlast),
+                            DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+                            DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+                            calendar = '<tr>',
+                            month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+                        if (DNfirst != 0) {
+                            for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+                        }else{
+                            for(var  i = 0; i < 6; i++) calendar += '<td>';
+                        }
+                        for(var  i = 1; i <= Dlast; i++) {
+                            if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                            calendar += '<td class="today">' + i;
+                            }else{
+                            calendar += '<td>' + i;
+                            }
+                            if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+                            calendar += '<tr>';
+                            }
+                        }
+                        for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
+                        document.querySelector('#'+id+' tbody').innerHTML = calendar;
+                        document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+                        document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+                        document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+                        if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                            document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
+                        }
+                        }
+                        Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+                        // переключатель минус месяц
+                        document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+                            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+                        }
+                        // переключатель плюс месяц
+                        document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+                            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+                        }
+                        </script>
+                    </form> <!-- /calendar -->
+
+                    <form class="application" action="" method="post">
+                        <label class="application-label" for="application-date">Заселение и выезд</label>
+                        
+                            <input class="application-date" id="application-date" type="date" name="settlement">
+                            <input class="application-time" id="application-date" type="time" name="settlement-time">
+                            <input class="application-date" id="application-date" type="date" name="departure">
+                            <input class="application-time" id="application-date" type="time" name="departure-time">
+
+                        <label class="label_name" for="name">Имя*</label>
+                            <input class="name" id="name" type="text" name="name">
+                            
+                        <label class="label_number_tel" for="number_tel">Телефон*</label>
+                            <input class="number_tel" id="number_tel" type="number" name="number_tel" min="1" max="12">
+
+                        <label class="label_email" for="email">E-mail</label>
+                            <input class="e-mail" id="email" type="email" name="e-mail">
+                    </form> <!-- /application -->
+                </div> <!-- /booking-forms -->
+
+                <button class="booking" type="submit" name="booking" value="booking-apartment">Забронировать</button> 
+            </div> <!-- /content -->
+        </section> <!-- /apartment-forms -->
+
+        <!-- Footer -->
+        <footer class="footer-wrapper">
+            <div class="footer content">
+                <div class="footer-menu">
+                    <div class="nav">
+                        <a class="header-nav-link logo"  href="/" title="Главная"></a>
+                        <a class="header-nav-link" href="/flats.html">Квартиры</a>
+                        <a class="header-nav-link" href="/reviews.html">Отзывы</a>
+                        <a class="header-nav-link" href="/about.html">О компании</a>
+                    </div>
+
+                    <div class="address">
+                        <img class="icon-mapmarker" src="/images/icons/icon-mapmarker.png" alt="">
+                        <div class="text-address">Санкт-Петербург, набережная реки Мойки, дом&nbsp;40, литер &laquo;А&raquo;, офис 210</div>
+                    </div>
+                    
+                    <div class="info-company">
+                        <div class="footer-contacts">
+                            <div class="telephone">
+                                <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
+                            </div>
+                            <div class="social-contacts">
+                                <a class="email" href="mailto:office@piter-rent-plus.ru"></a>
+                                <a class="vk" href="https://vk.com/"></a>
+                                <a class="fb" href="https://ru-ru.facebook.com/"></a>
+                                <a class="insta" href="https://www.instagram.com/"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-line"></div>
+
+                <div class="additional-info">
+                    <a class="license" href="">Лицензионный договор</a>
+                    <a class="rules" href="/rules.html">Правила использования</a>   
+                </div>
+            </div> <!-- /footer content -->
+        </footer> <!-- /footer-wrapper -->
+        <!-- Footer -->
     </body>
 </html>
