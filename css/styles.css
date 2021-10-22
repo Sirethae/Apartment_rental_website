@@ -1,0 +1,637 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;  
+}
+
+.content {
+    width: 1167px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 43px;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Roboto';
+    color: rgb(42, 42, 42);
+    line-height: 1.375;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.button a {
+    font-size: 15px;
+    color: rgb(42, 42, 42);
+    line-height: 1.467;
+    text-decoration: none;
+    border: rgb(42, 42, 42) 1px solid;
+    border-radius: 20px;
+    padding: 9px 20px 0 19px;
+    display: inline-block;
+    margin: 16px auto;
+    height: 31px;    
+}
+
+.button a:hover {
+    background-color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);        
+}
+
+/* Шапка */
+.header-wrapper {
+    background-color: rgb(42, 42, 42);
+    width: auto;
+    height: 40px;
+    padding: 20px 0;     
+}
+
+.header-wrapper .content {
+    height: 38px;
+}
+
+.text-menu a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 51px;
+    padding: 10px 0 30px 0;
+    text-decoration: none;    
+}
+
+.text-menu:last-child {
+    margin-right: 0;
+}
+
+.text-menu a:hover {
+    opacity: 0.4;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 35px;
+    height: 38px;
+    display: block;
+    background-image: url(/images/icons/logo.svg);
+    float: left;
+    margin-right: 51px;
+}
+
+.logo:hover {
+    opacity: 0.4;
+}
+
+.phone-me .telephone a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-decoration: none;
+    float: right;
+    margin: 9px 50px 0 0;     
+}
+
+.phone-me .button-phone {
+    float: right;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    line-height: 1.467;
+    border: rgb(255, 255, 255) 1px solid;
+    border-radius: 20px;
+    padding: 9px 20px 0 19px;
+    display: block;
+    height: 30px;
+    text-decoration: none;     
+}
+
+.phone-me .telephone .icon-phone {
+    background-image: url(/images/icons/icon-phone.png);
+    width: 14px;
+    height: 14px;
+    float: right;
+    margin: 13px 11px 0 0;
+}
+
+.telephone:hover {
+    opacity: 0.4;
+}
+
+.button-phone:hover {
+    color: rgb(42, 42, 42);
+    background-color: rgb(255, 255, 255);         
+}
+/* Шапка */
+
+/* Главная страница */
+    /* Квартиры */
+.flats-wrapper {
+    background-color: #f5f5f5;
+    height: 979px;
+    padding-top: 38px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.flats .flat {
+    background-color: white;
+    margin: 0 15px 30px 15px;
+    float: left;
+    width: 369px;
+    height: 365px;
+    position: relative;
+}
+
+.flat img {
+    background-color: olive;
+    display: block;
+    height: 220px;
+}
+
+.flat .price {
+    position: absolute;
+    background-color: white;
+    right: 15px;
+    top: 15px;
+    border-radius: 5px;
+    background-color: rgb(42, 42, 42);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    padding: 14.6px 15px 11.6px 16px;
+    display: block;
+    height: 24px;
+    width: auto;     
+}
+
+.flat .base-desc {
+    font-size: 18px;
+    color: rgb(42, 42, 42);
+    line-height: 1.333;
+    padding: 25px 0 0 40px;
+    text-align: left;
+}
+
+.flat .params {
+    font-size: 14px;
+    color: rgb(42, 42, 42);
+    line-height: 1.429;
+    margin: 12px 0 40px 40px;
+}
+
+.params .guests {
+    float: left;
+    margin-right: 10px;
+}
+
+.params .icon-guests {
+    background-image: url(/images/icons/icon-guests.png);
+    width: 12px;
+    height: 16px;
+    float: left;
+    margin: 2px 10px 0 0;   
+}
+
+.params .icon-beds {
+    background-image: url(/images/icons/icon-beds.png);
+    width: 14px;
+    height: 16px;
+    float: left;
+    margin: 2px 10px 0 0;   
+}
+
+.params .beds {
+    float: left;
+}
+
+.flat .rooms {
+    font-weight: bold;
+}
+
+.flat:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.flat:nth-child(3n) {
+    margin-right: 0;
+}
+    /* Квартиры */
+
+
+    /* Отзывы */
+.reviews .review {
+    width: 468px;
+    height: 131px;
+    background-color: #f4efed;
+    padding: 40px 60px 40px 40px;
+    margin: 0 15px 30px 15px;
+    float: left;
+}
+
+.review:first-child {
+    margin-left: 0;
+}
+
+.review:last-child {
+    margin-right: 0;
+}
+
+.info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 13px;      
+}
+
+.info p.author {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0 0 0 0;
+    padding-top: 4px;
+}
+
+.info p.date {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 4px 0;
+}
+
+.currents .current {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #1b1b1c;
+    border-radius: 50%;
+    margin: 0 8px 22px 8px;
+    opacity: 0.25;
+}
+
+.currents li:first-child {
+    opacity: 1;
+}
+
+.currents li:nth-child(2):hover {
+    opacity: 0.4;
+}
+    /* Отзывы */
+/* Главная страница */
+
+/* Подвал */
+.footer-wrapper {
+    background-color: rgb(42, 42, 42);
+    width: auto;
+    height: 265px;      
+}
+
+.footer .social-contacts a {
+    display: block;
+    background-image: url(/images/icons/contacts.png);
+    float: left;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.footer .social-contacts a:hover {
+    opacity: 0.4;
+}
+
+.footer .social-contacts a.email {
+    width: 16px;
+    height: 13px;
+}
+
+.footer .social-contacts a.vk {
+    width: 22px;
+    height: 12px;
+    background-position: -22px 0;
+}
+
+.footer .social-contacts a.fb {
+    width: 14px;
+    height: 14px;
+    background-position: -22px -14px;
+}
+
+.footer .social-contacts a.insta {
+    width: 14px;
+    height: 14px;
+    background-position: 0 -14px;
+}
+
+.social-contacts a.insta {
+    margin-right: 0;
+}
+
+.footer .telephone a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-decoration: none;
+    float: right;
+    margin-left: 25px;     
+}
+
+.footer .telephone .icon-phone {
+    background-image: url(/images/icons/icon-phone.png);
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-top: -20px;
+}
+
+.address .icon-map {
+    background-image: url(/images/icons/icon-mapmarker.png);
+    width: 14px;
+    height: 19px;
+    float: right;
+    margin-right: 11px;
+}
+
+.address .text-address {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    width: 300px;
+    height: 45px;
+    float: right;
+    margin-right: 73px;
+}
+
+.footer .contacts {
+    float: right;
+}
+
+.footer .main-menu {
+    padding-top: 73px;
+}
+
+.footer .line {
+    border-bottom: 1px solid white;
+    opacity: 0.1;
+    margin-top: 50px;
+    margin-bottom: 34px;
+}
+
+.additional-info a {
+    font-size: 12px;
+    color: white;
+    line-height: 1.333;
+    text-decoration: underline;
+    opacity: 0.4;
+    margin: 0 9px 0 9px;
+}
+
+.additional-info:first-child {
+    margin-left: 0;
+}
+
+.additional-info a:hover {
+    opacity: 1;
+}
+/* Подвал */
+
+/* Страница о компании */
+    /* О компании */
+.about-company {
+    height: 340px;
+    padding-top: 38px;
+}
+
+.text-about-company {
+    border-left: 2px solid #2a2a2a;
+    width: 965px;
+    margin: -15px auto 0 auto;
+}
+
+.text-about-company p {
+    font-size: 18px;
+    line-height: 1.333;
+    padding-left: 29px;
+}
+
+.text-about-company p strong {
+    font-weight: bold;
+}
+
+.text-about-company p i {
+    font-style: italic;
+}
+    /* О компании */
+
+    /* Контакты */
+.company-contacts {
+    background-color: #f5f5f5;
+    height: 542px;
+    padding-top: 38px;
+}
+
+.company-contacts .contact-info {
+    margin-top: -2px;
+}
+
+.contact-info .contacts {
+    float: left;
+    height: 392px;
+    width: 598px;
+    background-color: white;
+}
+
+.contact-info .contacts li.time {
+    font-size: 24px;
+    line-height: 0.917;
+    text-align: left;
+    margin: 40px 0 40px 40px;
+}
+
+.contact-info .contacts li {
+    font-size: 18px;
+    line-height: 1.333;
+    text-align: left;
+    margin: 20px 0 20px 40px;
+}
+
+.contact-info .contacts li b {
+    font-weight: bold;
+}
+
+.contact-info .social-contacts a {
+    display: block;
+    height: 20px;
+    float: left;
+    margin: 0 65px 0 -40px;
+}
+
+.contact-info .contacts .line {
+    background-color: rgb(27, 27, 28);
+    opacity: 0.102;
+    width: 479px;
+    height: 1px;
+}
+
+.contact-info .map-info {
+    position: relative;
+    width: 568px;
+    height: 392px;
+    float: right;
+}
+
+.contact-info .map-info .map-icon {
+    height: 50px;
+    width: 37px;
+    position: absolute;
+    top: 171px;
+    right: 266px;
+}
+
+.contact-info .map-info .map {
+width: 568px;
+height: 392px;
+}
+    /* Контакты */
+
+    /* Наша команда */
+.our-team {
+    padding-top: 38px;
+}
+
+.employees {
+    margin-top: -10px;
+    margin-bottom: 70px;
+}
+
+.employees .colleague-photo {
+    border-radius: 50%;
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.colleague {
+    float: left;
+    width: 360px;
+    height: 100px;
+    margin: 0 15px 31px 15px;
+}
+
+.colleague:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.colleague:nth-child(3n) {
+    margin-right: 0;
+}
+
+.colleague .FIO {
+    font-size: 18px;
+    line-height: 1.333;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.colleague .FIO b {
+    font-weight: bold;
+}
+
+.colleague-contacts .telephone-icon {
+    background-image: url(/images/icons/phone.png);
+    height: 14px;
+    width: 14px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.colleague-contacts .mail-icon {
+    background-image: url(/images/icons/mail.png);
+    height: 11px;
+    width: 14px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.colleague-contacts li a{
+    font-size: 14px;
+    line-height: 1.714;
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+    /* Наша команда */
+/* Страница о компании */
+
+/* Страница наши квартиры */
+.all-flats-wrapper {
+    background-color: #f5f5f5;
+    padding-top: 38px;
+    padding-bottom: 47px;
+}
+
+form label, form p {
+    font-size: 14px;
+    color: rgb(27, 27, 28);
+    line-height: 1.429;
+    display: inline-block;
+    text-align: left;
+}
+
+input {
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    color: rgb(27, 27, 28);
+    line-height: 1.429;
+    padding: 7px 9px 5px 10px;
+    border-radius: 5px;
+    opacity: 0.2;
+}
+
+input[checked] {
+    opacity: 1;
+    color: white;
+    background-color: rgb(27, 27, 28);
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+    background-color: #f5f5f5;
+    color: rgb(27, 27, 28);
+}
+
+input[type="date"] {
+    font-size: 14px;
+    color: rgb(27, 27, 28);
+    line-height: 1.429;
+    padding: 4px 9px 4px 11px;
+    border-radius: 5px;
+}
+
+label {
+    margin-right: 27px;
+}
+/* Страница наши квартиры */
+  
+  

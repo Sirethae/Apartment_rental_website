@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Квартира на Невского</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            input, textarea {
+                display: block;
+                margin: 0 0 10px 10px;
+                border: 1px solid gray;
+            }
+
+            input[type="text"] {
+                padding: 5px;
+                font-size: 1.5rem;
+                width: 250px;
+            }
+
+            textarea {
+                font-size: 1.5rem;
+                width: 400px;
+                height: 80px;
+                padding: 5px;
+            }
+
+            label {
+                font-size: 1.5rem;
+                display: block;
+            }
+
+            input[type="checkbox"], input[type="radio"] {
+                float: left;
+                width: 30px;
+                margin-bottom: 5px;
+            }
+
+            select {
+                width: 200px;
+                font-size: 1rem;
+                margin: 0 0 10px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>1-к квартира на Невского</h1>
+        <form action="https://shultais.education/form" method="POST" target="_blank" enctype="multipart/form-data">
+            <label>Имя:
+                <input type="text" name="first_name" placeholder="Введите ваше имя"></label>
+            <label for="post-comment">Текст комментария:</label>
+                <textarea id="post-comment" name="comment"></textarea>
+            <label>
+                <input type="checkbox" name="rules">
+                принять правила проекта
+            </label>
+            <label>
+                <input type="checkbox" name="subs" checked>
+                подписаться на рассылку
+            </label>
+            <label>
+                <input type="radio" name="sex" value="m" checked>Мужской
+            </label>
+            <label>
+                <input type="radio" name="sex" value="w">Женский
+            </label>
+            <select name="countries" size="5">
+                <optgroup label="СНГ">
+                    <option value="ru">Россия</option>
+                    <option value="kz">Казахстан</option>
+                    <option value="by">Белоруссия</option>
+                </optgroup>
+
+                <optgroup label="Европа">
+                    <option value="en">Англия</option>
+                    <option value="be">Бельгия</option>
+                    <option value="de">Германия</option>
+                    <option value="pl">Польша</option>
+                    <option value="fr">Франция</option>
+                    <option value="cz">Чехия</option>
+                </optgroup>
+            </select>
+            <input type="file" name="photo">
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Бюджет</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            table {
+                width: 700px;
+                border: 2px solid blue;
+                border-collapse: collapse;
+            }
+
+            table th, table td {
+                padding: 10px;
+                border: 1px solid skyblue;
+            }
+
+            table tbody tr th {
+                text-align: left;
+            }
+
+            table thead tr th {
+                background-color: skyblue;
+                border: 1px solid white;
+            }
+
+            table tfoot tr * {
+                background-color: lightblue;
+                font-weight: bold;
+            }
+
+            table tbody tr:nth-child(odd) * {
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Бюджет</h1>
+        <table>
+            <caption>Бюджет на 2019 год</caption>
+            <colgroup>
+                <col width="40">
+                <col>
+                <col width="100">
+                <col width="100">
+                <col width="100">
+                <col width="100">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2" colspan="2">Квартира</th>             
+                    <th colspan="2" scope="col">Март</th>            
+                    <th colspan="2" scope="col">Февраль</th>
+                </tr>
+                <tr>
+                    <th>План</th>
+                    <th>Факт</th>
+                    <th>План</th>
+                    <th>Факт</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <th scope="row">Лиговский пр., 130</th>              
+                    <td>35000</td>
+                    <td>37000</td>
+                    <td>38000</td>
+                    <td>42000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <th scope="row">Некрасова, 22</th>               
+                    <td>52000</td>
+                    <td>60000</td>
+                    <td>70000</td>
+                    <td>65000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <th scope="row">Кирпичный, 12</th>               
+                    <td>11400</td>
+                    <td>21400</td>
+                    <td>20000</td>
+                    <td>22000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Итого</th>               
+                    <td>98400</td>
+                    <td>118400</td>
+                    <td>128000</td>
+                    <td>107000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
