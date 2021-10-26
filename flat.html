@@ -61,18 +61,18 @@
                             <ul class="params">
                                 <li class="guests">
                                     <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                    2 гостя
+                                    5 гостей
                                 </li>
                                 <li class="beds">
                                     <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                    2 спальных места
+                                    6 спальных мест
                                 </li>
                             </ul>
                             <li class="amenities">
-                                Кабельное ТВ, игровая консоль, WiFi
+                                <p>Кабельное ТВ, игровая консоль, WiFi</p>
                             </li>
                             <li class="additional-amenities">
-                                фен, утюг, гладильная доска, предметы гигиены, фильтр для воды, кофемашина, чай, печенье
+                                <p>фен, утюг, гладильная доска, предметы гигиены, фильтр для воды, кофемашина, чай, печенье</p>
                             </li>
                         </ul>
                     </div> <!-- /apartment-parameters -->
@@ -86,85 +86,109 @@
         </section> <!-- /Apartment -->
         <!-- /Apartment -->
 
+        <!-- Apartment forms -->
         <section class="apartment-forms">
             <div class="content">
                 <h2>Забронировать квартиру</h2>
 
                 <div class="booking-forms">
-                    <form class="calendar" action="" method="post">
-                        <table id="calendar2">
-                            <thead>
-                            <tr><td>‹<td colspan="5"><td>›
-                            <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
-                            <tbody>
-                        </table>
-                        
-                        <script>
-                        function Calendar2(id, year, month) {
-                        var Dlast = new Date(year,month+1,0).getDate(),
-                            D = new Date(year,month,Dlast),
-                            DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
-                            DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
-                            calendar = '<tr>',
-                            month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
-                        if (DNfirst != 0) {
-                            for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
-                        }else{
-                            for(var  i = 0; i < 6; i++) calendar += '<td>';
-                        }
-                        for(var  i = 1; i <= Dlast; i++) {
-                            if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-                            calendar += '<td class="today">' + i;
-                            }else{
-                            calendar += '<td>' + i;
-                            }
-                            if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
-                            calendar += '<tr>';
-                            }
-                        }
-                        for(var  i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
-                        document.querySelector('#'+id+' tbody').innerHTML = calendar;
-                        document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
-                        document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
-                        document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
-                        if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
-                            document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
-                        }
-                        }
-                        Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
-                        // переключатель минус месяц
-                        document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-                            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
-                        }
-                        // переключатель плюс месяц
-                        document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-                            Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
-                        }
-                        </script>
-                    </form> <!-- /calendar -->
-
-                    <form class="application" action="" method="post">
-                        <label class="application-label" for="application-date">Заселение и выезд</label>
-                        
-                            <input class="application-date" id="application-date" type="date" name="settlement">
-                            <input class="application-time" id="application-date" type="time" name="settlement-time">
-                            <input class="application-date" id="application-date" type="date" name="departure">
-                            <input class="application-time" id="application-date" type="time" name="departure-time">
-
-                        <label class="label_name" for="name">Имя*</label>
-                            <input class="name" id="name" type="text" name="name">
+                    <div class="calendar">
+                        <form class="calendar-form" action="" method="post">
+                            <table id="calendar2">
+                                <thead>
+                                <tr><td>‹<td class="month" colspan="5"><td>›
+                                <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                                <tbody>
+                            </table>
                             
-                        <label class="label_number_tel" for="number_tel">Телефон*</label>
-                            <input class="number_tel" id="number_tel" type="number" name="number_tel" min="1" max="12">
+                            <script>
+                            function Calendar2(id, year, month) {
+                            var Dlast = new Date(year,month+1,0).getDate(),
+                                D = new Date(year,month,Dlast),
+                                DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+                                DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+                                calendar = '<tr>',
+                                month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+                            if (DNfirst != 0) {
+                                for(var  i = 1; i < DNfirst; i++) calendar += '<td>';
+                            }else{
+                                for(var  i = 0; i < 6; i++) calendar += '<td>';
+                            }
+                            for(var  i = 1; i <= Dlast; i++) {
+                                if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+                                calendar += '<td class="today">' + i;
+                                }else{
+                                calendar += '<td>' + i;
+                                }
+                                if (new Date(D.getFullYear(),D.getMonth(),i).getDay() == 0) {
+                                calendar += '<tr>';
+                                }
+                            }
+                            for(var  i = DNlast; i < 7; i++) calendar += '<td class="bashful">&nbsp;';
+                            document.querySelector('#'+id+' tbody').innerHTML = calendar;
+                            document.querySelector('#'+id+' thead td:nth-child(2)').innerHTML = month[D.getMonth()] +' '+ D.getFullYear();
+                            document.querySelector('#'+id+' thead td:nth-child(2)').dataset.month = D.getMonth();
+                            document.querySelector('#'+id+' thead td:nth-child(2)').dataset.year = D.getFullYear();
+                            if (document.querySelectorAll('#'+id+' tbody tr').length < 6) {  // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
+                                document.querySelector('#'+id+' tbody').innerHTML += '<tr><td class="bashful">&nbsp;<td class="bashful">&nbsp;<td class="bashful">&nbsp;<td class="bashful">&nbsp;<td class="bashful">&nbsp;<td class="bashful">&nbsp;<td class="bashful">&nbsp;';
+                            }
+                            }
+                            Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+                            // переключатель минус месяц
+                            document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+                                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+                            }
+                            // переключатель плюс месяц
+                            document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+                                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+                            }
+                            </script>
+                        </form> <!-- /calendar -->
+                    </div>
 
-                        <label class="label_email" for="email">E-mail</label>
-                            <input class="e-mail" id="email" type="email" name="e-mail">
-                    </form> <!-- /application -->
+                    <div class="application">
+                        <h3 class="application-h3">Оставить заявку</h3>
+
+                        <form class="application-form" action="/" method="post" id="booking-apartment">
+                            <div class="check-date">
+                                <label class="application-label" for="application-date">Заселение и выезд</label>
+
+                                <div class="check-date-input">
+                                    <div class="settlement">
+                                        <input class="application-date" id="application-date" type="date" name="settlement">
+                                        <input class="application-time" id="application-date" type="time" name="settlement-time">
+                                    </div>
+                                    <div class="departure">
+                                        <input class="application-date" id="application-date" type="date" name="departure">
+                                        <input class="application-time" id="application-date" type="time" name="departure-time">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="first-name">
+                                <label class="application-label" for="name">Имя*</label>
+                                <input class="name" id="name" type="text" name="name" placeholder="Введите Ваше имя" required>
+                            </div>
+
+                            <div class="tel-email">  
+                                <div class="tel-form">
+                                    <label class="application-label" for="number-tel">Телефон*</label>
+                                    <input class="number-tel" id="number-tel" type="tel" name="number-tel" placeholder="Введите Ваш номер телефона" required>
+                                </div>
+                                
+                                <div class="email-form">
+                                    <label class="application-label" for="email">E-mail</label>
+                                    <input class="e-mail" id="email" type="email" name="e-mail" placeholder="Введите Ваш e-mail">
+                                </div>   
+                            </div>
+                        </form> <!-- /application-form -->
+                    </div> <!-- /application -->
                 </div> <!-- /booking-forms -->
 
-                <button class="booking" type="submit" name="booking" value="booking-apartment">Забронировать</button> 
+                <button class="booking" type="submit" form="booking-apartment" name="booking" value="booking-apartment">Забронировать</button> 
             </div> <!-- /content -->
         </section> <!-- /apartment-forms -->
+        <!-- /Apartment forms -->
 
         <!-- Footer -->
         <footer class="footer-wrapper">
