@@ -1,6 +1,13 @@
 html {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 *,
@@ -9,9 +16,13 @@ html {
     box-sizing: border-box;
 }
 
+.main-content {
+    flex: 1 0 auto;
+}
+
 .content {
     width: 100%;
-    max-width: 1166px;
+    max-width: 1167px;
     
     margin: 0 auto;
 
@@ -163,7 +174,8 @@ h1, h2, h3 {
 .flats {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    column-gap: 30px;
 
     margin-top: 44px;
 }
@@ -172,8 +184,6 @@ h1, h2, h3 {
     margin-bottom: 30px;
 
     background-color: white;
-    max-width: 369px;
-    height: 365px;
 
     position: relative;
 }
@@ -368,6 +378,10 @@ h1, h2, h3 {
     ==================================*/
 
 /* Footer */
+.footer {
+    flex: 0 0 auto;
+}
+
 .footer-wrapper {
     background-color: rgb(42, 42, 42);
     width: auto;     
@@ -718,6 +732,7 @@ h1, h2, h3 {
 .all-flats-wrapper {
     background-color: #f5f5f5;
     padding-bottom: 70px;
+    height: 100%;
 }
 
 /* Form */
@@ -793,7 +808,7 @@ h1, h2, h3 {
     top: 45px;
 }
 
-.input-apartment {
+.btn-apartment {
     padding: 8px 10px 7px 11px;
 
     font-size: 0.9rem;
@@ -809,12 +824,13 @@ h1, h2, h3 {
     transition: opacity 0.2s linear;
 }
 
-.input-apartment:hover {
+.btn-apartment:hover {
     background-color: #f5f5f5;
     opacity: 1;
+    cursor: pointer;
 }
 
-.input-apartment:focus {
+.btn-apartment:focus {
     color: rgb(255, 255, 255);
     background-color: rgb(42, 42, 42);
     opacity: 1;
@@ -866,10 +882,19 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.apartment-photo-title {
+    width: 568px;
+    height: 340px;
 }
 
 .apartment-photo {
-    margin-bottom: 30px;
+    width: 269px;
+    height: 160px;
 }
 
 .apartment-parameters {
@@ -893,6 +918,12 @@ h1, h2, h3 {
     font-size: 1.2rem;
     color: rgba(27, 27, 28, 0.4);
     line-height: 1.2;
+}
+
+.apartment-address-map {
+    width: 100%;
+    max-width: 1166px;
+    height: 345px;
 }
 
 .btn-booking {
@@ -1168,6 +1199,10 @@ h1, h2, h3 {
 
     color: rgb(255, 255, 255);
     background-color: rgb(42, 42, 42);
+}
+
+.none {
+    display: none;
 }
   
 

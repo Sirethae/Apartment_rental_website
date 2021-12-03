@@ -19,337 +19,346 @@
                         <a class="header-nav-link" href="/reviews.html">Отзывы</a>
                         <a class="header-nav-link" href="/about.html">О компании</a>
                     </nav>
-                        
+                            
                     <div class="phone-me">
                         <a class="tel" href="tel:89052550010"><img class="icon-phone" src="/images/icons/icon-phone.png" alt="">8 (905) 255-00-10</a>
                         <a class="button-phone" href="/">Перезвоните мне</a>
-                    </div>
-                </div>   
-            </div>
+                        </div>
+                    </div>   
+                </div>
             <h1>Посуточная аренда элитных квартир в Санкт-Петербурге</h1>
         </header>
         <!-- /Header -->
 
-        <!-- Flats wrapper -->
-        <section class="all-flats-wrapper">
-            <div class="content">
-                <h2>Наши квартиры</h2>
+        <div class="main-content">
+            <!-- Flats wrapper -->
+            <section class="all-flats-wrapper">
+                <div class="content">
+                    <h2>Наши квартиры</h2>
 
-                <!-- Form -->
-                <form class="form" action="" method="get">
-                    <div class="rental-dates">
-                        <label class="label" for="date">Заселение и выезд</label>
-                        
-                        <input class="input-date" id="date" type="date" name="settlement">
-                        <input class="input-date" id="date" type="date" name="departure">
-                    </div>
-
-                    <div class="sorting-apartments">
-                        <label class="label" for="apartment">Количество комнат</label>
-
-                        <input class="input-apartment" id="apartment" type="submit" name="studio" value="Студия">
-                        <input class="input-apartment" id="apartment" type="submit" name="1-apartment" value="1">
-                        <input class="input-apartment" id="apartment" type="submit" name="2-apartment" value="2">
-                        <input class="input-apartment" id="apartment" type="submit" name="3-apartment" value="3">
-                        <input class="input-apartment" id="apartment" type="submit" name="4-apartment" value="4">
-                        <input class="input-apartment" id="apartment" type="submit" name=">4-apartment" value=">4">
-                    </div>
-                </form>
-                <!-- /Form -->
-
-                <!-- Flats -->
-                <ul class="flats">
-                    <li class="flat">
-                        <div class="price">7000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/01.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">Лиговский пр-т, 130</div>
+                    <!-- Form -->
+                    <form class="form" action="" method="">
+                        <div class="rental-dates">
+                            <label class="label" for="date">Заселение и выезд</label>
+                            
+                            <input class="input-date" id="date" type="date" name="settlement">
+                            <input class="input-date" id="date" type="date" name="departure">
                         </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
 
-                    <li class="flat">
-                        <div class="price">6500 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/02.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">Студия</div>
-                            <div class="address">ул. Некрасова, 22</div>
+                        <div class="sorting-apartments">
+                            <p class="label">Количество комнат</p>
+
+                            <button class="btn-apartment" type="button" name="studio" value="studio" data-btn="studio">Студия</button>
+                            
+                            <button class="btn-apartment" type="button" name="1-apartment" value="1" data-btn="1-apartment">1</button>
+                            
+                            <button class="btn-apartment" type="button" name="2-apartment" value="2" data-btn="2-apartment">2</button>
+                            
+                            <button class="btn-apartment" type="button" name="3-apartment" value="3" data-btn="3-apartment">3</button>
+                            
+                            <button class="btn-apartment" type="button" name="4-apartment" value="4" data-btn="4-apartment">4</button>
+                            
+                            <button class="btn-apartment">Сбросить</button>
                         </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                1 гость
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                    </form>
+                    <!-- /Form -->
 
-                    <li class="flat">
-                        <div class="price">7000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/03.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">Студия</div>
-                            <div class="address">ул. 4-я Красноармейская, 2</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                3 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                4 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                    <!-- Flats -->
+                    <ul class="flats" id="flats-container">
 
-                    <li class="flat">
-                        <div class="price">9500 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/04.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">ул. Ораниенбаумская, 24</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="flat">
-                        <div class="price">8000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/05.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">Невский пр-т, 113</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                3 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                3 спальных места
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="flat">
-                        <a class="link-flat" href="/flat.html">
-                            <div class="price">12000 &#8381;</div>
-                            <img class="img-room" src="/images/rooms/06(1).jpg" alt="Photo of the apartment">
+                        <!-- Flats 
+                        <li class="flat" data-flat data-id="1">
+                            <div class="price">7000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/01.jpg" alt="Photo of the apartment">
                             <div class="base-desc">
-                                <div class="rooms">2-комнатная</div>
-                                <div class="address">10-я линия В.О., 57</div>
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">Лиговский пр-т, 130</div>
                             </div>
                             <ul class="params">
                                 <li class="guests">
                                     <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                    5 гостей
+                                    2 гостя
                                 </li>
                                 <li class="beds">
                                     <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                    6 спальных мест
+                                    2 спальных места
                                 </li>
                             </ul>
-                        </a>
-                    </li>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">8500 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/07.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">Невский пр-т, 64</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">6500 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/02.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">Студия</div>
+                                <div class="address">ул. Некрасова, 22</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    1 гость
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">8000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/08.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">Студия</div>
-                            <div class="address">наб. реки Фонтанки, 28</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                1 гость
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">7000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/03.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">Студия</div>
+                                <div class="address">ул. 4-я Красноармейская, 2</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    3 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    4 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">9000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/09.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">ул. Итальянская, 10литА</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                3 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                3 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">9500 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/04.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">ул. Ораниенбаумская, 24</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">7000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/10.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">Студия</div>
-                            <div class="address">пер. Сергея Тюленина, 6</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">8000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/05.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">Невский пр-т, 113</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    3 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    3 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">9000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/11.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">ул. Большая Морская, 17</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <a class="link-flat" href="/flat.html">
+                                <div class="price">12000 &#8381;</div>
+                                <img class="img-room" src="/images/rooms/06(1).jpg" alt="Photo of the apartment">
+                                <div class="base-desc">
+                                    <div class="rooms">2-комнатная</div>
+                                    <div class="address">10-я линия В.О., 57</div>
+                                </div>
+                                <ul class="params">
+                                    <li class="guests">
+                                        <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                        5 гостей
+                                    </li>
+                                    <li class="beds">
+                                        <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                        6 спальных мест
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">6500 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/12.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">Студия</div>
-                            <div class="address">пер. Кирпичный, 8</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                1 гость
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                1 спальное место
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">8500 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/07.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">Невский пр-т, 64</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">8500 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/13.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">наб. реки Мойки, 71</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">8000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/08.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">Студия</div>
+                                <div class="address">наб. реки Фонтанки, 28</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    1 гость
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">8000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/14.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">Невский пр-т, 42</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                1 гость
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                1 спальное место
-                            </li>
-                        </ul>
-                    </li>
+                        <li class="flat" data-flat>
+                            <div class="price">9000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/09.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">ул. Итальянская, 10литА</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    3 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    3 спальных места
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="flat">
-                        <div class="price">7000 &#8381;</div>
-                        <img class="img-room" src="/images/rooms/15.jpg" alt="Photo of the apartment">
-                        <div class="base-desc">
-                            <div class="rooms">1-комнатная</div>
-                            <div class="address">ул. Караванная, 14</div>
-                        </div>
-                        <ul class="params">
-                            <li class="guests">
-                                <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
-                                2 гостя
-                            </li>
-                            <li class="beds">
-                                <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
-                                2 спальных места
-                            </li>
-                        </ul>
-                    </li>
-                </ul> <!-- /flats -->
-        
-            </div> <!-- /content -->
-        </section> <!-- /all-flats-wrapper -->
-        <!-- /Flats wrapper -->
+                        <li class="flat" data-flat>
+                            <div class="price">7000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/10.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">Студия</div>
+                                <div class="address">пер. Сергея Тюленина, 6</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="flat" data-flat>
+                            <div class="price">9000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/11.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">ул. Большая Морская, 17</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="flat" data-flat>
+                            <div class="price">6500 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/12.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">Студия</div>
+                                <div class="address">пер. Кирпичный, 8</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    1 гость
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    1 спальное место
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="flat" data-flat>
+                            <div class="price">8500 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/13.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">наб. реки Мойки, 71</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="flat" data-flat>
+                            <div class="price">8000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/14.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">Невский пр-т, 42</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    1 гость
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    1 спальное место
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="flat" data-flat>
+                            <div class="price">7000 &#8381;</div>
+                            <img class="img-room" src="/images/rooms/15.jpg" alt="Photo of the apartment">
+                            <div class="base-desc">
+                                <div class="rooms">1-комнатная</div>
+                                <div class="address">ул. Караванная, 14</div>
+                            </div>
+                            <ul class="params">
+                                <li class="guests">
+                                    <img class="icon-guests" src="/images/icons/icon-guests.png" alt="">
+                                    2 гостя
+                                </li>
+                                <li class="beds">
+                                    <img class="icon-beds" src="/images/icons/icon-beds.png" alt="">
+                                    2 спальных места
+                                </li>
+                            </ul>
+                        </li>  /flats -->
+                    </ul>
+            
+                </div> <!-- /content -->
+            </section> <!-- /all-flats-wrapper -->
+            <!-- /Flats wrapper -->
+        </div>
 
         <!-- Footer -->
         <footer class="footer-wrapper">
@@ -391,5 +400,8 @@
             </div> <!-- /footer content -->
         </footer> <!-- /footer-wrapper -->
         <!-- Footer -->
+
+
+        <script src="./JS/renderFlats.js"></script>
     </body>
 </html>

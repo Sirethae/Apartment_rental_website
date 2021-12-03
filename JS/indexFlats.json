@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "1-комнатная",
+        "address": "Лиговский пр-т, 130",
+        "price": 7000,
+        "guests": 2,
+        "beds": 2,
+        "imgSrc": "01.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Студия",
+        "address": "ул. Некрасова, 22",
+        "price": 6500,
+        "guests": 1,
+        "beds": 2,
+        "imgSrc": "02.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Студия",
+        "address": "ул. 4-я Красноармейская, 2",
+        "price": 7000,
+        "guests": 3,
+        "beds": 4,
+        "imgSrc": "03.jpg"
+    },
+    {
+        "id": 4,
+        "title": "1-комнатная",
+        "address": "ул. Ораниенбаумская, 24",
+        "price": 9500,
+        "guests": 2,
+        "beds": 2,
+        "imgSrc": "04.jpg"
+    },
+    {
+        "id": 5,
+        "title": "1-комнатная",
+        "address": "Невский пр-т, 113",
+        "price": 8000,
+        "guests": 3,
+        "beds": 3,
+        "imgSrc": "05.jpg"
+    },
+    {
+        "id": 6,
+        "title": "2-комнатная",
+        "address": "10-я линия В.О., 57",
+        "price": 12000,
+        "guests": 5,
+        "beds": 6,
+        "imgSrc": "06.jpg"
+    }
+]
